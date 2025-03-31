@@ -3,19 +3,18 @@
   <allowed-os-versions>
     <os-version min="10.11.4"/>
   </allowed-os-versions>
-  <license file="license.rtf" mime-type="text/rtf"/>
   <welcome file="welcome.rtf" mime-type="text/rtf"/>
-  <title>CCID free software driver</title>
-  <pkg-ref id="org.openkms.mac.ccid"/>
-  <options customize="never" require-scripts="false"/>
+  <conclusion file="conclusion.rtf" mime-type="text/rtf"/>
+  <title>Antares Auto-Tune Pro v11</title>
+  <pkg-ref id="com.antares.autotune"/>
   <choices-outline>
     <line choice="default">
-      <line choice="org.openkms.mac.ccid"/>
+      <line choice="com.antares.autotune"/>
     </line>
   </choices-outline>
   <choice id="default"/>
-  <choice id="org.openkms.mac.ccid" visible="false">
-    <pkg-ref id="org.openkms.mac.ccid"/>
+  <choice id="com.antares.autotune" visible="false">
+    <pkg-ref id="com.antares.autotune"/>
   </choice>
-  <pkg-ref id="org.openkms.mac.ccid" onConclusion="RequireRestart">ifd-ccid.pkg</pkg-ref>
+  <pkg-ref id="com.antares.autotune" installKBytes="0" version="1.0" auth="Root">file://./MeuInstalador.pkg</pkg-ref>
 </installer-gui-script>
